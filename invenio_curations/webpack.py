@@ -29,6 +29,7 @@ curations = WebpackThemeBundle(
         "semantic-ui": dict(
             entry={
                 "invenio-curations-deposit": "./js/invenio_curations/deposit/index.js",
+                "invenio-curations-requests": "./js/invenio_curations/requests/index.js",
             },
             dependencies={},
             aliases={

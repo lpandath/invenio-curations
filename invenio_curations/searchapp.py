@@ -25,6 +25,6 @@ def search_app_context() -> dict[str, Callable[..., dict[str, Any]]]:
             endpoint="/api/curations/",
             headers={"Accept": "application/json"},
             initial_filters=[["is_open", "true"]],
-            hidden_params=[["expand", "1"]],
+            hidden_params=[["expand", "1"], ["include_timeline", "1"]],
         ),
     }

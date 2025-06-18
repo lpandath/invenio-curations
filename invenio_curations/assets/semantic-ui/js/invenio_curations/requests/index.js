@@ -5,32 +5,34 @@
 // Invenio-Curations is free software; you can redistribute it and/or modify it
 // under the terms of the MIT License; see LICENSE file for more details.
 
-import { defaultContribComponents } from "@js/invenio_requests/contrib";
-import { i18next } from "@translations/invenio_curations/i18next";
-import {
-  RequestCritiqueButton,
-  RequestResubmitButton,
-  RequestReviewButton,
-} from "./Buttons";
-import { RDMCurationIcon } from "./Icons";
-import {
-  RequestCritiqueModalTrigger,
-  RequestResubmitModalTrigger,
-  RequestReviewModalTrigger,
-} from "./ModalTriggers";
 import { CritiquedStatus, ResubmittedStatus, ReviewStatus } from "./Status.js";
 import {
   LabelStatusCritique,
   LabelStatusResubmit,
   LabelStatusReview,
 } from "./StatusLabel.js";
-import { LabelTypeRDMCuration } from "./TypeLabel.js";
+import {
+  RequestCritiqueButton,
+  RequestResubmitButton,
+  RequestReviewButton,
+} from "./Buttons";
+import {
+  RequestCritiqueModalTrigger,
+  RequestResubmitModalTrigger,
+  RequestReviewModalTrigger,
+} from "./ModalTriggers";
 import {
   TimelineCritiqueEvent,
   TimelineResubmitEvent,
   TimelineReviewEvent,
 } from "./timelineActionEvents.js";
+
+import { EnhancedRequestSearchResultItem } from "./EnhancedRequestSearchResultItem.js";
+import { LabelTypeRDMCuration } from "./TypeLabel.js";
+import { RDMCurationIcon } from "./Icons";
 import { RequestMetadata } from "./RequestMetadataLayout.js";
+import { defaultContribComponents } from "@js/invenio_requests/contrib";
+import { i18next } from "@translations/invenio_curations/i18next";
 
 export const curationComponentOverrides = {
   ...defaultContribComponents,
@@ -40,8 +42,8 @@ export const curationComponentOverrides = {
 
   // icon for the request in the search
   "InvenioRequests.RequestTypeIcon.layout.rdm-curation": RDMCurationIcon,
-
   "InvenioRequest.RequestMetadata.Layout": RequestMetadata,
+  "SearchApp.ResultsListItem.layout": EnhancedRequestSearchResultItem,
 
   // labels for the request status
   "RequestStatusLabel.layout.critiqued": LabelStatusCritique,

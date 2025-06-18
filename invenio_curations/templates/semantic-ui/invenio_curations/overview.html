@@ -14,6 +14,7 @@ under the terms of the MIT License; see LICENSE file for more details.
 {%- block javascript %}
 {{ super() }}
 {{ webpack['invenio-app-rdm-user-requests.js'] }}
+{{ webpack['invenio-curations-requests.js'] }}
 {%- endblock javascript %}
 
 {%- block user_dashboard_body %}

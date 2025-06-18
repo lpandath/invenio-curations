@@ -29,5 +29,16 @@
   "Status": "Status",
   "Created": "Created",
   "Expires": "Expires",
-  "Record": "Record"
+  "Record": "Record",
+  "Last Activity": "Last Activity",
+  "Community Status": "Community Status",
+  "Communities": "Communities",
+  "Open community reviews": "Open community reviews",
+  "Loading...": "Loading...",
+  "No recent activity": "No recent activity",
+  "accepted this request": "accepted this request",
+  "declined this request": "declined this request",
+  "submitted this request": "submitted this request",
+  "performed an action": "performed an action",
+  "by": "by"
 }
